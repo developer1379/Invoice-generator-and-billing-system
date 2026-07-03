@@ -121,3 +121,9 @@ Currently, **all tests pass successfully**.
 ## 📄 License
 
 This project is open-sourced software licensed under the [MIT license](LICENSE).
+
+---
+
+## 🤝 Pair Programming
+
+This codebase was developed in pair-programming collaboration with **Antigravity**, the agentic AI coding assistant designed by Google DeepMind.
