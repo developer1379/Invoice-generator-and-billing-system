@@ -29,6 +29,9 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::view('/privacy', 'pages.privacy')->name('privacy');
+Route::view('/terms', 'pages.terms')->name('terms');
+
 // Invoices (Checks auth inside Controller)
 Route::resource('invoices', InvoiceController::class);
 

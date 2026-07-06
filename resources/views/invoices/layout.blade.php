@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invoicify — Professional Invoice Maker</title>
+    <title>@yield('title', 'Invoicify — Professional Invoice Maker')</title>
     
     <!-- Fonts (Google Roboto for Material UI Design) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -215,9 +215,9 @@
                 &copy; {{ date('Y') }} Invoicify. All rights reserved. Powered by Roboto & Three.js.
             </p>
             <div class="flex items-center gap-4 text-xs text-slate-400 dark:text-zinc-500">
-                <span class="hover:text-slate-650 dark:hover:text-zinc-400 transition-colors cursor-pointer">Privacy Policy</span>
+                <a href="{{ route('privacy') }}" class="hover:text-slate-650 dark:hover:text-zinc-400 transition-colors">Privacy Policy</a>
                 <span>&bull;</span>
-                <span class="hover:text-slate-650 dark:hover:text-zinc-400 transition-colors cursor-pointer">Terms of Service</span>
+                <a href="{{ route('terms') }}" class="hover:text-slate-650 dark:hover:text-zinc-400 transition-colors">Terms of Service</a>
             </div>
         </div>
     </footer>
